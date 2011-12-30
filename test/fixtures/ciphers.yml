@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ciphername: MyString
+  ciphernumber: 1
+
+two:
+  ciphername: MyString
+  ciphernumber: 1

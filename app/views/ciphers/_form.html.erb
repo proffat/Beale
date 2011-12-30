@@ -1,0 +1,25 @@
+<%= form_for(@cipher) do |f| %>
+  <% if @cipher.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cipher.errors.count, "error") %> prohibited this cipher from being saved:</h2>
+
+      <ul>
+      <% @cipher.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ciphername %><br />
+    <%= f.text_field :ciphername %>
+  </div>
+  <div class="field">
+    <%= f.label :ciphernumber %><br />
+    <%= f.number_field :ciphernumber %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
